@@ -51,8 +51,11 @@ pip install -r requirements.txt
 3. **Prepare Input Files:**
 - Open the `private_key.txt`: Add your private keys (one per line) in the root directory.
 ```sh
-nano pvkey.txt 
+nano private_key.txt 
 ```
+4. **Change env file**
+Rename `Example.env` to `.env`: mandatory to replace this file
+
 - Open the `address.txt`(optional): Add recipient addresses (one per line) for `sendtx.py`, `deploytoken.py`, `sendtoken.py`,`nftcollection.py`.
 ```sh
 nano address.txt 
