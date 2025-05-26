@@ -9,13 +9,13 @@ Bridge: [T1 Devnet Bridge](https://devnet.t1protocol.com/bridge)
 
 - `Multi-Account Ready`: Loads private keys from private_key.txt to bridge across many wallets effortlessly.
 
+- `Testnet Feature`: Bridge , Withdraw, Send ETH T1, Send token on T1, Deploy Token & NFT.
+
 - `Vibrant CLI`: Powered by colorama for colorful, clear terminal output with stylish borders and highlights.
 
 - `Async-Powered`: Utilizes asyncio for fast, concurrent blockchain calls and smooth user experience.
 
 - `Robust Error Handling`: Catches and reports errors in transactions, balance queries, and RPC connectivity gracefully.
-
-- `Bilingual Interface`: Switch easily between English and Vietnamese for seamless usability.
 
 ## Prerequisites
 Make sure you have:
