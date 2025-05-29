@@ -1,4 +1,3 @@
-import sys
 import asyncio
 from colorama import init
 from src.utils.logging import log_warning, log_error, log_debug, countdown_timer
